@@ -1,4 +1,4 @@
-module RailsSettings
+module LedermannRailsSettings
   class Configuration
     def initialize(*args, &block)
       options = args.extract_options!
@@ -10,7 +10,7 @@ module RailsSettings
       @klass = klass
       @klass.class_attribute :default_settings, :setting_object_class_name
       @klass.default_settings = {}
-      @klass.setting_object_class_name = options[:class_name] || 'RailsSettings::SettingObject'
+      @klass.setting_object_class_name = options[:class_name] || 'LedermannRailsSettings::SettingObject'
 
       if block_given?
         yield(self)
