@@ -5,7 +5,7 @@ require 'ledermann-rails-settings/version'
 
 Gem::Specification.new do |gem|
   gem.name          = 'ledermann-rails-settings'
-  gem.version       = RailsSettings::VERSION
+  gem.version       = LedermannRailsSettings::VERSION
   gem.licenses      = ['MIT']
   gem.authors       = ['Georg Ledermann']
   gem.email         = ['mail@georg-ledermann.de']
