@@ -17,7 +17,7 @@ module LedermannRailsSettings
 
     def without_settings
       joins("LEFT JOIN #{base_class.table_name} ON #{settings_join_condition}").
-      where('settings.id IS NULL')
+      where("#{base_class.table_name}.id IS NULL")
     end
 
     def without_settings_for(var)
